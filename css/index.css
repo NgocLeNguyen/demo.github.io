@@ -1,0 +1,233 @@
+@font-face{
+	font-family: ico;
+	src:url(../vendor/gallery_fonts/icomoon.ttf);
+}
+@font-face{
+	font-family:font_MedievalSharp ;
+	src:url(css/font_MedievalSharp.ttf);
+}
+body{
+	margin: 0;
+	font-family: Roboto;
+	color: rgba(1,1,1,255);
+	font-family: 'Playfair Display', serif;
+	font-family: 'Lora', serif;
+}
+.menu{
+	position: fixed;
+	width: 20%;
+	background-color: #e6e6e6;
+	height: 100vh;
+}
+
+.content{
+	float:right;
+	width: 80%;
+}
+.content .gallery{
+	overflow: hidden;/* cho chieu cao cua gallery*/
+}
+.content .gallery .photo{
+	width: 25%;
+	float: left;
+}
+.content .gallery .photo img{
+	width: 100%;
+	display: block; 
+	/*thuoc tinh nay giúp cho the img */
+	/*khong con thuoc tinh co khoang cach */
+	/*giua các the ở dưới bottom */
+}
+.icon-strategy:before{
+	content: "\e03b";
+}
+.icon-telescope:before{
+	content: "\e02a";
+}
+.icon-cirlce-compass:before{
+	content: "\e038";
+}
+.icon-tools-2:before{
+	content: "\e034";
+}
+ul.lst-services li.service{
+	width: 50%;
+	float: left;
+}
+ul.lst-services li.service .ico {
+	width: 30%;
+	float: left;
+}
+ul.lst-services li.service .item {
+	width: 70%;
+	float: left;
+}
+ul.lst-services{
+	list-style: none; 
+	/*làm cho dấm chấm của danh sách mất đi*/
+	padding: 0;
+	width: 90%;
+	margin: auto;
+	/*color: green;*/
+}
+.services ul.lst-services li.service .ico i.icon-strategy{
+	color: #7dd638;
+}
+.services ul.lst-services li.service .ico i.icon-telescope{
+	color: #7dd638;
+}
+.services ul.lst-services li.service .ico i.icon-cirlce-compass{
+	color: #7dd638;
+}
+ .services ul.lst-services li.service .ico i.icon-tools-2{
+ 	color: #7dd638;
+ }
+[class^="icon"]{
+	font-family: ico!important;
+	font-size:70px;
+}
+@font-face{
+	font-family: Roboto;
+	src:url(fonts/Roboto-Regular.ttf);
+	/*color: green;*/
+}
+.services h1{
+	font-size: 2em;
+	padding: 20px;
+}
+@keyframes show {
+	0% {opacity: 0;top: -15px; position: relative;}
+	25% {opacity: 0.3;top: -10px;position: relative;}
+	50% {opacity: 0.6;top: -5px;position: relative;}
+	75% {opacity: 0.8;top: -0px;position: relative;}
+	100% {opacity: 1;}
+}
+ul.lst-services{
+	list-style: none;
+	padding: 0;
+	width: 90%;
+	margin: auto;
+	-webkit-animation:show 1s 1;/* ????*/
+	animation: show 1s 1;/* ???*/
+}
+.slogans{
+	text-align: center;
+	background-color: #67de0b;
+	color: #fff;
+}
+
+.services{
+	overflow: hidden;
+	/*background-color: #7ac143;
+	color: #fff;*/
+}
+.slogans h1{
+	text-align: center;
+	font-size: 1em;
+	width: 60%;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 20px auto 20px auto;
+	line-height: 1.5em;
+}
+.slogans p{
+	margin: 0;
+	padding-bottom: 100px;
+}
+.slogans img{
+	width: 10%;
+	border-radius: 50%;
+	margin-top: 30px;
+}
+.rating .view{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+
+.rating .view h1{
+	font-size: 1.5em;
+	padding: 20%;
+	color: #fff;
+}
+.rating{
+	overflow: hidden;
+	background-image: url(../img/bg_rating.jpg);
+	background-size: cover; /*??*/
+	background-attachment: fixed;/*??*/
+}
+/*Định dạng thu nhỏ phần nội dung chứa và canh khung vào giữa*/
+.news .new{
+	width: 80%;
+	margin: auto;
+	padding-bottom: 3px;
+}
+/*Định dạng lại font chữ, cỡ chữ, màu chữ cho h1 và phần nội dung*/
+.news .new h1{
+	font-size: 2em;
+	color: #7ac143;
+	font-family: Times New Roman;
+	font-weight: 300;
+}
+/*định dạng cho nút Lear more và điều chỉnh kích cở */
+.news .new p{
+	margin: 0;
+	font-size: 1.2em;
+	margin-bottom: 30px;
+}
+.news .new a{
+	text-decoration: none;/* bỏ dấu gạch chân*/
+	border:solid 3px #7ac143; /*viền xanh bao quanh*/ 
+	border-radius: 50px;
+	padding: 10px;
+}
+.news .new a:hover{
+	background-color: #7ac143;
+	color: #fff;
+}
+/*điều chỉnh bỏ gạch đầu dòng padding cho ul canh lề cho các font chữ*/
+.menu .top-menu ul{
+	list-style: none;
+	padding:0;
+	text-align: center;
+}
+/*đổi màu chữ cho thẻ a */
+/*bỏ gạch chân cho thẻ a ở chỗ menu top*/
+.menu .top-menu ul a{
+	color: gray;
+	text-decoration: none;
+	text-transform: uppercase; /*tăng khoảng cách giữa các chữ ở menu*/
+	line-height: 2em;/* chỉnh chữ và chiều cao*/
+	letter-spacing: 4px; /*chiều dài chữ*/
+}
+.menu .top-menu .line{
+	width: 30%;
+	margin: auto;
+	height: 2px;
+	background:linear-gradient(to right , green , white, green);
+	/*đường viền màu đỏ từ phai sang trái*/
+}
+@keyframes show_line{
+ 0%{width: 5%;}
+ 20%{width: 10%;}
+ 40%{width: 15%;}
+ 60%{width: 20%;}
+ 80%{width: 25%;}
+ 100%{width: 30%;}
+}
+/*tạo hiệu ứng đường viền có màu chạy từ trong ra ngoài */
+.menu .top-menu li:hover .line{
+	margin: auto;
+	height: 2px;
+	background:linear-gradient(to right , red , yellow ,red);
+	animation: show_line 1s infinite;
+	-webkit-animation:show_line 0.5s infinite;
+}
+.menu .top-menu ul{
+	margin-top: 10vh;
+}
+/*điều chỉnh khoảng cách top-menu và phần bên trên trang web*/
+.photo img:hover{
+	transform: scale();
+}
+
